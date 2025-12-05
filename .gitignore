@@ -53,3 +53,22 @@ Thumbs.db
 # Environment
 .env
 .env.local
+.env.*.local
+
+# Logs
+*.log
+logs/
+
+# Testing
+coverage/
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Temporary files
+*.tmp
+*.temp

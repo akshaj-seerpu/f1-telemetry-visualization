@@ -97,7 +97,7 @@ class F1DataLoader:
             'country': session.event['Country'],
             'date': session.event['EventDate'].strftime('%Y-%m-%d'),
             'session_type': session.name,
-            'total_laps': int(session.total_laps) if hasattr(session, 'total_laps') else 0,
+            'total_laps': int(session.total_laps) if hasattr(session, 'total_laps') and session.total_laps is not None else 0,
         }
     
     def get_drivers_info(self, session: fastf1.core.Session) -> list:
